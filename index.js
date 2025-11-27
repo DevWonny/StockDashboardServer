@@ -19,8 +19,7 @@ const io = new Server(server, {
   transports: ["websocket", "polling"],
 });
 
-// const FINNHUB_URL = `wss://ws.finnhub.io?token=${process.env.FINNHUB_TOKEN}`;
-const FINNHUB_URL = `wss://ws.finnhub.io?token=d2nqnr1r01qsrqkpn0p0d2nqnr1r01qsrqkpn0pg`;
+const FINNHUB_URL = `wss://ws.finnhub.io?token=${process.env.FINNHUB_TOKEN}`;
 const ws = new WebSocket(FINNHUB_URL);
 
 // Client별 구독 관리
